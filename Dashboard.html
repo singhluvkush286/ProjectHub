@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProjectHub.com</title>
+    <style>
+        /* Basic styling for the webpage */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color:#483D8B;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between; /* Align items to the right corner */
+            align-items: center; /* Vertically center items */
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            font-size: 24px;
+        }
+        p {
+            font-size: 16px;
+        }
+        /* Style for the search bar */
+        .search-bar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+        input[type="text"] {
+            width: 70%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        button[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+        /* Style for project recommendations */
+        .recommendations {
+            margin-top: 20px;
+        }
+        .recommendations h2 {
+            font-size: 20px;
+        }
+        .recommendation-item {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+        /* Style for the new options in the header */
+        .header-options {
+            display: flex;
+            justify-content: space-between;
+        }
+        .header-option {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+        /* Additional style for the feedback box */
+        .feedback-box {
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+        /* Style for the notification icon */
+        .notification-icon {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        /* Style for the feedback table */
+        .feedback-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        .feedback-table th, .feedback-table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        .feedback-table th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Project Hub</h1></br>
+        <h3>Hello Test Moderator</h3>
+        <div class="header-options">
+            <div class="header-option">Add New Project</div>
+        </div>
+        <div class="notification-icon">Notification</div>
+    </header>
+    <div class="container">
+        <div class="project-stats">
+            <h2 style="font-weight: bold;">Project Statistics</h2>
+            <p style="font-weight: bold;">Number of Projects Uploaded: 50</p>
+            <p style="font-weight: bold;">Interaction in All Projects: High</p>
+            <p style="font-weight: bold;">Most Interacted Project: Project XYZ</p>
+            <div class="progress">
+                <div class="progress-bar" style="width: 75%; background-color: #4CAF50; height: 20px; margin-top: 10px;"></div>
+            </div>
+            <p style="font-weight: bold;">Project Completion Progress: 75%</p>
+            <div id="interaction-chart" style="width: 400px; height: 30px; margin-top: 20px;"></div>
+        </div>
+        
+        <h2>Feedback Received</h2>
+        <table class="feedback-table">
+            <tr>
+                <th>Date</th>
+                <th>Feedback</th>
+                <th>Action</th>
+            </tr>
+            <tr>
+                <td>2023-10-26</td>
+                <td>This is a sample feedback message.</td>
+                <td><button>Action</button></td>
+            </tr>
+            <tr>
+                <td>2023-10-26</td>
+                <td>This is a sample feedback message.</td>
+                <td><button>Action</button></td>
+            </tr>
+            <tr>
+                <td>2023-10-26</td>
+                <td>This is a sample feedback message.</td>
+                <td><button>Action</button></td>
+            </tr>
+            <!-- Add more rows for additional feedback entries -->
+        </table>
+        <h2>Suggestion Received</h2>
+        <table class="feedback-table">
+            <tr>
+                <th>Date</th>
+                <th>Suggestion</th>
+                <th>Action</th>
+            </tr>
+            <tr>
+                <td>2023-10-26</td>
+                <td>This is a sample feedback message.</td>
+                <td><button>Action</button></td>
+            </tr>
+            <tr>
+                <td>2023-10-26</td>
+                <td>This is a sample feedback message.</td>
+                <td><button>Action</button></td>
+            </tr>
+            <tr>
+                <td>2023-10-26</td>
+                <td>This is a sample feedback message.</td>
+                <td><button>Action</button></td>
+            </tr>
+            <!-- Add more rows for additional feedback entries -->
+        </table>
+    </div>
+</body>
+</html>
+

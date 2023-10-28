@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Project Sharing Platform</title>
+    <style>
+        /* Add your CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        /* Style for the header */
+        header {
+            background-color: #f2f2f2;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Style for the main content */
+        main {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        /* Style for the search box */
+        .search-box {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .search-box input[type="text"] {
+            width: 60%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .search-box input[type="submit"] {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+
+        .search-box input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        /* Style for filter options */
+        .filter-options {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .filter-options select {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        /* Style for project recommendations */
+        .recommendations {
+            margin-top: 20px;
+        }
+        .recommendations h2 {
+            font-size: 20px;
+        }
+        .recommendation-item {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Hello Testing !!</h1>
+    </header>
+
+    <main>
+        <div class="search-box">
+            <form action="/search" method="get">
+                <input type="text" name="search" placeholder="Search for projects...">
+                <input type="submit" value="Search">
+            </form>
+        </div>
+
+        <div class="filter-options">
+            <select name="department">
+                <option value="all">All Departments</option>
+                <option value="department1">Computer Application</option>
+                <option value="department2">Zoology</option>
+                <option value="department1">Botany</option>
+                <option value="department2">Maths</option>
+                <option value="department1">Chemistry</option>
+                <option value="department2">Physics</option>
+                <option value="department1">Biology</option>
+                <option value="department2">History</option>
+            </select>
+            <select name="topic">
+                <option value="all">All Topics</option>
+                <option value="topic1">Education</option>
+                <option value="topic2">Finance</option>
+                <option value="topic1">Healthcare</option>
+                <option value="topic2">SocialWork</option>
+                
+                
+            </select>
+
+            <div class="recommendations">
+                <div class="recommendation-item">
+                    <h3>Online Learning Platform Development</h3>
+                    <p>Build an interactive online learning platform for students of all ages, offering various courses and personalized learning paths.</p>
+                </div>
+                <div class="recommendation-item">
+                    <h3>Financial Data Analysis Tool</h3>
+                    <p>Create a comprehensive tool for financial data analysis, allowing users to analyze market trends, make predictions, and manage investment portfolios effectively.</p>
+                </div>
+                <div class="recommendation-item">
+                    <h3>Healthcare Information System Integration</h3>
+                    <p>Integrate various healthcare information systems to streamline patient data management, improve communication among healthcare professionals, and enhance overall patient care.</p>
+                </div>
+                <div class="recommendation-item">
+                    <h3>Social Work Community Outreach Program</h3>
+                    <p>Establish a community outreach program that focuses on providing essential support and resources to marginalized groups, promoting social welfare and fostering community development.</p>
+                </div>
+                <div class="recommendation-item">
+                    <h3>Historical Archive Digitization Initiative</h3>
+                    <p>Initiate a comprehensive project to digitize and preserve historical archives, ensuring their accessibility to future generations and facilitating historical research and education.</p>
+                </div>
+        </div>
+    </main>
+
+</body>
+
+</html>
